@@ -4,5 +4,10 @@ CREATE TABLE IF NOT EXISTS contact (
   last_name VARCHAR(30),
   email VARCHAR(30),
   phone VARCHAR(30)
-  INDEX(last_name)
-) engine=InnoDB;
+  ) engine=InnoDB;
+
+  insert into contact (first_name, last_name, email, phone) values('Vivek', 'Tiwari', 'vivt23@gmail.com', '1234567890');
+  insert into contact (first_name, last_name, email, phone) values('Geetika', 'Tiwari', 'geet@gmail.com', '8787989889');
+  insert into contact (first_name, last_name, email, phone) values('Scott', 'Tiger', 'scott@icloud.com', '9989898998');
+
+  select * from contact;
